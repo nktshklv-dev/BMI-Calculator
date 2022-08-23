@@ -12,12 +12,15 @@ class SecondViewController: UIViewController {
 
     
     var bmiValue: String?
+    var adviceText: String?
+    var color: UIColor?
     @IBOutlet var bmiValueLabel: UILabel!
     @IBOutlet var adviceLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        view.backgroundColor = color
+        adviceLabel.text = adviceText
         bmiValueLabel.text = bmiValue
     }
     
