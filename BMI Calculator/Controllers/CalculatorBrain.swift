@@ -17,14 +17,10 @@ struct CalculatorBrain{
         let bmiValue = Double(weight / (height * height))
         switch bmiValue{
         case 0...18.5:
-            print("Underweight")
             bmi = BMI(value: bmiValue, advice: "You should eat more pies!", color: .systemBlue)
-        
         case 18.5...24.9:
-            print("Normal")
             bmi = BMI(value: bmiValue, advice: "Keep eating healhty food!", color: .systemGreen)
         default:
-            print("Overweight")
             bmi = BMI(value: bmiValue, advice: "You should eat fewer pies!", color: .systemRed)
         }
         
